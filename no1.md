@@ -1,0 +1,1 @@
+SELECT sp.SalesPersonID as SalesPersonID, sp.salesYTD as salesYTD from salesorderheader as soh inner JOIN salesperson as sp ON sp.SalesPersonID = soh.SalesPersonID inner JOIN salesorderdetail as sod on soh.SalesOrderID = sod.SalesOrderID inner join production as p ON p.ProductID = sod.ProductID WHERE p.Name = 'wheel' ORDER BY sp.salesYTD DESC LIMIT 5;

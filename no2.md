@@ -1,0 +1,1 @@
+UPDATE `products` SET `CategoryID` = c.NewCategoryID FROM products as p INNER JOIN newcategory as c ON p.CategoryID = c.CategoryID;
